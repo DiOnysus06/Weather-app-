@@ -125,7 +125,7 @@ input::placeholder{
 
 @media(max-width: 936px){
     .container{
-        width:90%
+        width:60%
     }
 
     .weather_header{
