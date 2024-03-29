@@ -103,6 +103,7 @@ input::placeholder{
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
     margin-top: 3rem;
+
 }
 
 .weather_card{
@@ -122,14 +123,24 @@ input::placeholder{
     font-size: 14px;
 }
 
-.container{
-    width: 40%;
+@media(max-width: 936px){
+    .container{
+        width:90%
+    }
+
+    .weather_header{
+        flex-direction: column;
+    }
+
+    .weather_units{
+        margin-top: 1rem;
+    }
 }
 
-.weather_header{
-    flex-direction: column;
+@media(max-width:400px){
+    .weather_info{
+        grid-template-columns: none;
+    }
 }
 
-.weather_units{
-    margin-top: 1rem;
-}
+
