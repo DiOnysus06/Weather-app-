@@ -160,9 +160,13 @@ input::placeholder{
     font-weight:500;
 }
 
-@media(max-width:400px){
+@media(max-width:500px){
     .weather_info{
         grid-template-columns: none;
+    }
+    
+    .end{
+        color: #1e1e1e;
     }
 }
 
