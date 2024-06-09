@@ -3,12 +3,12 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: linear-gradient(to bottom,#b6bcbf, #808080, #4a4a4a, #202124, #0e1013);
+    background-image: url("https://images.unsplash.com/photo-1609154767012-331529e7d73b?q=80&w=1942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     
 }
 
 .container{
-    background: #171717;
+    background: rgba(47, 47, 47, 0.3);
     color: #fff;
     padding: 2rem;
     width: 40%;
@@ -27,12 +27,13 @@ input{
     background: #1e1e1e;
     outline: none;
     color: #fff;
+    width: 80%;
     padding: 0.5rem 2.5rem;
-    border-radius: 5px;
+    border-radius: 100px;
 }
 
 input::placeholder{
-    color: #fff;
+    color: #a9a9a9;
 }
 
 .weather_search{
@@ -41,23 +42,38 @@ input::placeholder{
 
 .weather_search i {
     position: absolute;
-    left: 1px;
-    top: 10px;
+    left: 9px;
+    top: 9px;
     font-size: 15px;
     color: #fff;
 }
 
 .weather_units{
-    
-    font-size: 1.5rem;
+    background-color: #1e1e1e;
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 100px;
 }
 
-.weather_units span {
+@media screen and (max-width: 500px) {
+    .weather_units{
+        position: relative;
+        top: 15px;
+    }
+}
+
+.weather_units span {   
     cursor: pointer;
+    gap: 3px;
+}
+
+.weather_units span:hover{
+    background-color: #2f2f2f;
+    border-radius: 100px;
 }
 
 .weather_units span:first-child{
-    margin-right: .5rem;
+    margin-right: 1.5rem;
 
 }
 
