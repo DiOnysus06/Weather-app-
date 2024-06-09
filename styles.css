@@ -153,6 +153,13 @@ input::placeholder{
     }
 }
 
+.end{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight:500;
+}
+
 @media(max-width:400px){
     .weather_info{
         grid-template-columns: none;
